@@ -24,7 +24,7 @@
     <h1>Pokedex</h1>
     <section class="contents">
         <ol id="pokemonList" class="pokemons">
-            <li class="pokemon"> 
+            <!-- <li class="pokemon"> 
                 <span class="number">#001</span>
                 <span class="name">Bulbasaur</span> 
                 <div class="detail">
@@ -35,10 +35,13 @@
                     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" 
                     alt="Charmander">
                 </div>
-            </li>
+            </li> -->
         </ol>
     </section>
 </body>
     <!-- JavaScript -->
+     <!-- primeiro que a main porque a main depende da poke-api.js
+     ouseja, a poke-api.js tem que ser carregada primeiro -->
+     <script src="assets/js/poke-api.js" ></script>
     <script src="assets/js/main.js" ></script>
 </html>
