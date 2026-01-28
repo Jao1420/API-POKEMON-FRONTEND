@@ -1,3 +1,4 @@
+
 .pokemons{
     display: grid;
     grid-template-columns: 1fr;
@@ -5,12 +6,31 @@
     padding: 0;
     list-style: none;
 }
+/* Cores por Tipo de Pokémon */
+.normal { background-color: #a8a878; }
+.fire { background-color: #f08030; }
+.water { background-color: #6890f0; }
+.grass { background-color: #78c850; }
+.electric { background-color: #f8d030; }
+.ice { background-color: #98d8d8; }
+.fighting { background-color: #c03028; }
+.poison { background-color: #a040a0; }
+.ground { background-color: #e0c068; }
+.flying { background-color: #a890f0; }
+.psychic { background-color: #f85888; }
+.bug { background-color: #a8b820; }
+.rock { background-color: #b8a038; }
+.ghost { background-color: #705898; }
+.dragon { background-color: #7038f8; }
+.dark { background-color: #705848; }
+.steel { background-color: #b8b8d0; }
+.fairy { background-color: #ee99ac; }
 
 .pokemon{
     margin: .5rem;
     padding: 2rem 1rem;
     color: white;
-    background-color: #49d0b0;
+    /* background-color: #49d0b0; */
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -24,8 +44,9 @@
 
 .pokemon .name{
     color: white;
-    margin: .25rem 0;
+    margin: .25rem .3;
     margin-bottom: 0;
+    text-transform: capitalize;
 }
 
 .pokemon .detail{
@@ -41,7 +62,7 @@
 }
 
 .pokemon .detail .type .type{
-    background-color: #3c8271;
+    /* background-color: #3c8271; */
     color: white;
     padding: .35rem .5rem;
     overflow: hidden;
@@ -49,6 +70,7 @@
     margin-top: .5rem;
     font-size: .85rem;
     border-radius: 5px;
+    filter: brightness(1.2);
 }
 
 .pokemon .detail img{
@@ -58,6 +80,27 @@
     height: 120px;
     object-fit: contain;
 }
+
+.loader{
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+}
+
+.loadMoreButton{
+  background-color: #7038f8;
+  color: white;
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+
+
 @media screen and (min-width: 992px){
     .contents{
         max-width: 992px;
