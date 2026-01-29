@@ -90,14 +90,16 @@
     padding: 1rem;
 }
 
-.loadMoreButton{
+/* it´s an id for the button to load more pokémons */
+#loadMoreButton{
   background-color: #7038f8;
   color: white;
   border: none;
   padding: .5rem 1rem;
   border-radius: .5rem;
-  cursor: pointer;
 }
+
+
 
 
 
