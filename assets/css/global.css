@@ -17,5 +17,39 @@ body{
 }
 h1{
     margin: 30px;
-    text-align: center;
+    text-align: left;
+}
+#searchBar {
+    width: 300px;
+    /* padding: 10px; */
+    align-self: right;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.fotter {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 15px 40px;
+    font-size: 14px;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    color: #381010;
+    position: relative; 
+    border-radius: .5rem;
+}
+
+.fotter .profile {
+    text-decoration: none;
+    color: #25056e;
+    font-weight: bold;
+}
+
+.fotter .info-fotter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Impede que o texto quebre linha */
 }

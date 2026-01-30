@@ -21,8 +21,10 @@
 
 </head>
 <body>
-    <h1>Pokedex</h1>
+    
     <section class="contents">
+        <h1>Pokedex</h1>
+        <input type="text" id="searchBar" placeholder="Search Pokemon" onkeyup="searchPokemon()">
         <ol id="pokemonList" class="pokemons">
             <!-- <li class="pokemon"> 
                 <span class="number">#001</span>
@@ -43,11 +45,19 @@
             </button>
         </div>
     </section>
+
+    <div class="fotter"> 
+        <a class= "profile" href="https://github.com/Jao1420" target="_blank">Github: @Jao1420</a>
+        <div class="info-fotter">
+            <span>Pokemons from first and second generation</span>
+         </div>
+    </div>
 </body>
     <!-- JavaScript -->
      <!-- primeiro que a main porque a main depende da poke-api.js
      ouseja, a poke-api.js tem que ser carregada primeiro -->
      <script src="assets/js/pokemon-model.js" ></script>
+     <script src="assets/js/search.js" ></script>
      <script src="assets/js/poke-api.js" ></script>
     <script src="assets/js/main.js" ></script>
 </html>
