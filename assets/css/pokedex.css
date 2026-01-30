@@ -113,37 +113,23 @@
     }
     
 }
-@media screen and (min-width: 380px){
+@media screen and (min-width: 360px){
     .contents{
-        height: auto;
+        height: 100vh;
     }
     .pokemons{
        grid-template-columns:  1fr 1fr;
     }
-    /* .fotter {
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        background-color: #f1f1f1;
-        flex-direction: column;
-        gap: 8px;
-        justify-content: center;
-    }
-    .fotter .info-fotter {
-        font-size: 12px;
-    } */
     
 }
 @media screen and (min-width: 576px){
     .pokemons{
        grid-template-columns:  1fr 1fr 1fr;
     }
-    .fotter {
-        padding: 15px 30px;
-    }
-    
+ 
 }
+
+
 @media screen and (min-width: 992px){
     .pokemons{
        grid-template-columns:  1fr 1fr 1fr 1fr ;

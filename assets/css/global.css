@@ -7,6 +7,8 @@
 }
 body{
     background-color: #bababa;
+     display: flex;
+  flex-direction: column;
 }
 
 .contents{
@@ -14,20 +16,34 @@ body{
     height: 150vh;
     width: 100vw;
     background-color: #f2f2f2;
+      flex: 1;
 }
 h1{
     margin: 30px;
     text-align: left;
 }
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* ajuste se quiser */
+}
+.search-wrapper i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  pointer-events: none;
+}
 #searchBar {
     width: 300px;
-    /* padding: 10px; */
+   padding: 10px 12px 10px 36px;
     align-self: right;
-    padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
 }
+
 .fotter {
     display: flex;
     align-items: center; 

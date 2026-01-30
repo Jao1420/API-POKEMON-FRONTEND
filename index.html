@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +12,31 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boldonse&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap"
+        rel="stylesheet">
+
+    <!-- cdn for Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- CSS -->
+
+    <!-- css stylesheets -->
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/pokedex.css">
-     
+
 
 
 </head>
+
 <body>
-    
+
     <section class="contents">
         <h1>Pokedex</h1>
-        <input type="text" id="searchBar" placeholder="Search Pokemon" onkeyup="searchPokemon()">
+        <div class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchBar" placeholder="Search Pokemon" onkeyup="searchPokemon()">
+        </div>
         <ol id="pokemonList" class="pokemons">
             <!-- <li class="pokemon"> 
                 <span class="number">#001</span>
@@ -40,24 +52,25 @@
             </li> -->
         </ol>
         <div class="loader">
-            <button  id="loadMoreButton" type="button">
+            <button id="loadMoreButton" type="button">
                 Carregar mais
             </button>
         </div>
     </section>
 
-    <div class="fotter"> 
-        <a class= "profile" href="https://github.com/Jao1420" target="_blank">Github: @Jao1420</a>
+    <div class="fotter">
+        <a class="profile" href="https://github.com/Jao1420" target="_blank">Github: @Jao1420</a>
         <div class="info-fotter">
             <span>Pokemons from first and second generation</span>
-         </div>
+        </div>
     </div>
 </body>
-    <!-- JavaScript -->
-     <!-- primeiro que a main porque a main depende da poke-api.js
+<!-- JavaScript -->
+<!-- primeiro que a main porque a main depende da poke-api.js
      ouseja, a poke-api.js tem que ser carregada primeiro -->
-     <script src="assets/js/pokemon-model.js" ></script>
-     <script src="assets/js/search.js" ></script>
-     <script src="assets/js/poke-api.js" ></script>
-    <script src="assets/js/main.js" ></script>
+<script src="assets/js/pokemon-model.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/poke-api.js"></script>
+<script src="assets/js/main.js"></script>
+
 </html>
